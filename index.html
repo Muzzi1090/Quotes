@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,8 +7,61 @@
   <meta name="description" content="InspireQuotes - Inspiring quotes and messages.">
   <meta name="google-adsense-account" content="ca-pub-2996799618758723" />
   <title>InspireQuotes</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2996799618758723" crossorigin="anonymous"></script>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f8fc;
+      color: #333;
+    }
+    header {
+      background: #007bff;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 10px;
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    main {
+      padding: 2rem;
+      max-width: 600px;
+      margin: auto;
+      text-align: center;
+    }
+    #quoteDisplay {
+      font-size: 1.2rem;
+      margin-top: 1.5rem;
+      padding: 1rem;
+      background: #fff;
+      border-left: 4px solid #007bff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      border-radius: 8px;
+      min-height: 60px;
+    }
+    button {
+      margin-top: 1rem;
+      padding: 10px 20px;
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    footer {
+      background: #f1f1f1;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -23,25 +77,38 @@
     </nav>
   </header>
   <main>
-    <h2>Welcome to InspireQuotes</h2>
-    
-<p>Get your daily dose of inspiration!</p>
-<button onclick="generateQuote()">Show Quote</button>
-<p id="quoteDisplay"></p>
-<script>
-  const quotes = [
-    "Believe in yourself!",
-    "Stay positive, work hard, make it happen.",
-    "Your attitude determines your direction.",
-    "Success is not for the lazy.",
-    "Push yourself, because no one else is going to do it for you."
-  ];
-  function generateQuote() {
-    const random = Math.floor(Math.random() * quotes.length);
-    document.getElementById("quoteDisplay").innerText = quotes[random];
-  }
-</script>
-
+    <h2>Daily Dose of Inspiration</h2>
+    <p>Click below to reveal a powerful quote.</p>
+    <button onclick="generateQuote()">Show Quote</button>
+    <p id="quoteDisplay">✨ Your quote will appear here ✨</p>
+    <script>
+      const quotes = [
+        "Believe in yourself!",
+        "Stay positive, work hard, make it happen.",
+        "Your attitude determines your direction.",
+        "Success is not for the lazy.",
+        "Push yourself, because no one else is going to do it for you.",
+        "Do something today that your future self will thank you for.",
+        "Small steps every day lead to big results.",
+        "It’s going to be hard, but hard is not impossible.",
+        "You don’t need to be perfect, just consistent.",
+        "Dream it. Wish it. Do it.",
+        "If you’re going through hell, keep going.",
+        "Don’t watch the clock; do what it does. Keep going.",
+        "Discipline is choosing between what you want now and what you want most.",
+        "Your limitation—it’s only your imagination.",
+        "Hustle until your haters ask if you’re hiring.",
+        "Act like a lady, think like a boss.",
+        "Be you. Do you. For you.",
+        "Confidence is not 'they will like me'. Confidence is 'I'll be fine if they don't.'",
+        "I'm not a backup plan, and definitely not your second choice.",
+        "Be savage. Not average."
+      ];
+      function generateQuote() {
+        const random = Math.floor(Math.random() * quotes.length);
+        document.getElementById("quoteDisplay").innerText = quotes[random];
+      }
+    </script>
   </main>
   <footer>&copy; 2025 InspireQuotes. All rights reserved.</footer>
 </body>
