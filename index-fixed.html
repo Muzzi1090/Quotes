@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="QuoteVerse - Boost your day with powerful motivational and attitude quotes." />
+  <meta name="author" content="QuoteVerse" />
+  <meta name="keywords" content="motivational quotes, attitude quotes, status quotes" />
+  <title>QuoteVerse</title>
+
+  <!-- ✅ Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2996799618758723"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <h1>QuoteVerse</h1>
+    <button id="theme-toggle" aria-label="Toggle dark/light theme">🌙</button>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="motivational.html">Motivational</a></li>
+        <li><a href="attitude.html">Attitude</a></li>
+        <li><a href="status.html">Status</a></li>
+        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="terms-and-conditions.html">Terms</a></li>
+        <li><a href="disclaimer.html">Disclaimer</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>Welcome to QuoteVerse</h2>
+      <p>Explore the best motivational, attitude, and status quotes to boost your day!</p>
+      <input type="text" id="search-bar" placeholder="Search quotes..." />
+    </section>
+
+    <section class="quote-generator">
+      <h3>Quote Generator</h3>
+      <blockquote id="quote">Click the button to generate a quote!</blockquote>
+      <button onclick="generateQuote()">New Quote</button>
+      <div class="share-buttons">
+        <button onclick="shareQuote('whatsapp')">Share on WhatsApp</button>
+        <button onclick="shareQuote('facebook')">Share on Facebook</button>
+      </div>
+    </section>
+
+    <section class="contact-info">
+      <h3>Contact Me</h3>
+      <p>Phone: <a href="tel:+923001234567">03212245995</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 QuoteVerse. All rights reserved.</p>
+  </footer>
+
+  <!-- Basic JS placeholders -->
+  <script>
+    function generateQuote() {
+      const quotes = [
+        "Believe in yourself!",
+        "Stay positive, work hard, make it happen.",
+        "Dream big and dare to fail.",
+        "Push yourself, because no one else is going to do it for you."
+      ];
+      const quote = quotes[Math.floor(Math.random() * quotes.length)];
+      document.getElementById('quote').innerText = quote;
+    }
+
+    function shareQuote(platform) {
+      const quote = document.getElementById('quote').innerText;
+      const url = encodeURIComponent(window.location.href);
+      const text = encodeURIComponent(quote);
+
+      let shareUrl = '';
+      if (platform === 'whatsapp') {
+        shareUrl = `https://wa.me/?text=${text}`;
+      } else if (platform === 'facebook') {
+        shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${url}&quote=${text}`;
+      }
+
+      window.open(shareUrl, '_blank');
+    }
+  </script>
+</body>
+</html>
