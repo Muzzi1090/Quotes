@@ -1,43 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Motivational, Attitude, and Status Quotes to inspire your day.">
-  <meta name="keywords" content="motivation, attitude, status quotes, daily quotes">
-  <title>Muzzi Quotes</title>
-  <style>
-    body { font-family: Arial, sans-serif; background: #f4f4f4; margin: 0; padding: 0; }
-    header { background: #333; color: white; padding: 20px; text-align: center; }
-    nav { background: #444; padding: 10px; text-align: center; }
-    nav a { color: white; margin: 0 10px; text-decoration: none; }
-    main { padding: 20px; }
-    .quote-card { background: white; padding: 15px; margin: 10px 0; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-    footer { text-align: center; padding: 15px; background: #333; color: white; }
-    .btn { background: #28a745; color: white; border: none; padding: 10px 15px; cursor: pointer; border-radius: 5px; }
-    .btn:hover { background: #218838; }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index, follow" />
+  <meta name="description" content="Motivational, attitude, and status quotes to inspire your daily life." />
+  <meta name="author" content="muzzi1090.github.io" />
+  <title>QuoteVerse - Motivation, Attitude & Status Quotes</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
 </head>
 <body>
   <header>
-    <h1>Muzzi Quotes</h1>
-    <p>Daily dose of Motivation, Attitude & Status Quotes</p>
+    <h1>QuoteVerse</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="motivational.html">Motivational</a></li>
+        <li><a href="attitude.html">Attitude</a></li>
+        <li><a href="status.html">Status</a></li>
+        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="terms-and-conditions.html">Terms</a></li>
+        <li><a href="disclaimer.html">Disclaimer</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
   </header>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="quotes.html">Motivational</a>
-    <a href="attitude.html">Attitude</a>
-    <a href="status.html">Status</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-  </nav>
   <main>
-    
-        <h2>Welcome to Muzzi Quotes</h2>
-        <p>Explore powerful and unique quotes that spark inspiration and confidence.</p>
-        <p><a class="btn" href="quotes.html">Explore Motivational Quotes</a></p>
-        
+    <section class="intro">
+      <h2>Welcome to QuoteVerse</h2>
+      <p>Explore the best motivational, attitude, and status quotes to boost your day!</p>
+    </section>
+    <section class="quote-generator">
+      <h3>Quote Generator</h3>
+      <blockquote id="quote">Click the button to generate a quote!</blockquote>
+      <button onclick="generateQuote()">New Quote</button>
+    </section>
   </main>
-  <footer>&copy; 2025 Muzzi Quotes. All rights reserved.</footer>
+  <footer>
+    <p>&copy; 2025 QuoteVerse. All rights reserved.</p>
+  </footer>
 </body>
 </html>
