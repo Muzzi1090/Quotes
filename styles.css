@@ -1,41 +1,85 @@
 
 body {
   font-family: Arial, sans-serif;
-  margin: 0; padding: 0;
-  background: #f9f9f9;
+  background: #f4f4f4;
+  color: #333;
+  transition: background 0.3s, color 0.3s;
+}
+.dark-mode {
+  background: #121212;
+  color: #f4f4f4;
 }
 header {
-  background: #333;
-  color: white;
-  padding: 15px;
+  background: #222;
+  color: #fff;
+  padding: 1rem;
   text-align: center;
+  position: relative;
+}
+#theme-toggle {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
 }
 nav ul {
   list-style: none;
   padding: 0;
-  margin: 10px 0;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  gap: 15px;
+  flex-wrap: wrap;
+}
+nav ul li {
+  margin: 0.5rem;
 }
 nav ul li a {
-  color: white;
+  color: #fff;
   text-decoration: none;
 }
 main {
-  padding: 20px;
+  padding: 2rem;
 }
-.quote-box {
-  background: #eee;
-  padding: 15px;
-  margin: 15px 0;
-  border-left: 5px solid #333;
+.quote-generator {
+  margin-top: 2rem;
+  text-align: center;
+}
+.quote-generator blockquote {
+  font-size: 1.5rem;
+  margin: 1rem auto;
+  padding: 1rem;
+  background: #fff;
+  border-left: 5px solid #007BFF;
+  max-width: 600px;
+}
+.dark-mode .quote-generator blockquote {
+  background: #1e1e1e;
+}
+.quote-generator button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.share-buttons {
+  margin-top: 1rem;
+}
+.share-buttons button {
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+#search-bar {
+  width: 100%;
+  max-width: 300px;
+  padding: 0.5rem;
+  margin-top: 1rem;
 }
 footer {
-  background: #333;
-  color: white;
+  background: #222;
+  color: #fff;
   text-align: center;
-  padding: 10px;
-  margin-top: 20px;
+  padding: 1rem;
+  margin-top: 2rem;
 }

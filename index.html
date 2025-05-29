@@ -1,1 +1,58 @@
-<!DOCTYPE html><html><head><title>QuoteVerse</title></head><body><h1>Welcome to QuoteVerse</h1></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index, follow" />
+  <meta name="description" content="Motivational, attitude, and status quotes to inspire your daily life." />
+  <meta name="author" content="muzzi1090.github.io" />
+  <meta property="og:title" content="QuoteVerse - Best Quotes for Every Mood">
+  <meta property="og:description" content="Explore motivational, attitude, and status quotes. Share and inspire the world!">
+  <meta property="og:image" content="https://muzzi1090.github.io/logo.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>QuoteVerse - Motivation, Attitude & Status Quotes</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>QuoteVerse</h1>
+    <button id="theme-toggle">🌙</button>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="motivational.html">Motivational</a></li>
+        <li><a href="attitude.html">Attitude</a></li>
+        <li><a href="status.html">Status</a></li>
+        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="terms-and-conditions.html">Terms</a></li>
+        <li><a href="disclaimer.html">Disclaimer</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="intro">
+      <h2>Welcome to QuoteVerse</h2>
+      <p>Explore the best motivational, attitude, and status quotes to boost your day!</p>
+      <input type="text" id="search-bar" placeholder="Search quotes..." />
+    </section>
+    <section class="quote-generator">
+      <h3>Quote Generator</h3>
+      <blockquote id="quote">Click the button to generate a quote!</blockquote>
+      <button onclick="generateQuote()">New Quote</button>
+      <div class="share-buttons">
+        <button onclick="shareQuote('whatsapp')">Share on WhatsApp</button>
+        <button onclick="shareQuote('facebook')">Share on Facebook</button>
+      </div>
+    </section>
+    <section class="contact-info">
+      <h3>Contact Me</h3>
+      <p>Phone: <a href="tel:+923001234567">03212245995</a></p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 QuoteVerse. All rights reserved.</p>
+  </footer>
+</body>
+</html>
