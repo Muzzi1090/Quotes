@@ -1,26 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Welcome | Muzzi's Blog</title>
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Motivational & Attitude Quotes</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>Muzzi's Blog</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="blog.html">Blog</a>
-      <a href="contact.html">Contact</a>
-      <a href="privacy.html">Privacy Policy</a>
-    </nav>
-  </header>
-  <main>
-    <h2>Welcome to My Page</h2>
-    <p>This is a general blog where I share tech tips, personal thoughts, and helpful guides. Stay tuned!</p>
-  </main>
-  <footer>&copy; 2025 Muzzi | All rights reserved.</footer>
+    <header>
+        <h1>Motivational & Attitude Quotes</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="quotes/motivational.html">Motivational</a>
+            <a href="quotes/attitude.html">Attitude</a>
+            <a href="quotes/success.html">Success</a>
+            <a href="about.html">About</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="disclaimer.html">Disclaimer</a>
+            <a href="terms.html">Terms</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Random Quote Generator</h2>
+            <div id="quote-box">
+                <p id="quote-text">Click below to get a motivational or attitude quote!</p>
+                <button onclick="generateQuote()">Get Quote</button>
+                <button onclick="shareOnWhatsApp()">Share on WhatsApp</button>
+                <button onclick="shareOnFacebook()">Share on Facebook</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Contact: 03212245995 | Email: <a href="mailto:muzammilsiddiqui104@gmail.com">muzammilsiddiqui104@gmail.com</a></p>
+        <p>© 2025 Motivational & Attitude Quotes</p>
+    </footer>
+<script src="quotes/quotes.js"></script>
 </body>
 </html>
