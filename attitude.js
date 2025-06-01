@@ -1,29 +1,14 @@
 const quotes = [
-  "My attitude is a result of your actions, so if you change yours, I'll change mine.",
-  "I’m not heartless, I just learned how to use my heart less.",
+  "I’m not special, I’m just a limited edition.",
+  "Don’t follow me, I’m lost too.",
   "Attitude is everything, so pick a good one.",
-  "I’m not a second option, you either choose me or lose me.",
-  "Be savage, not average.",
-  "I’m not here to be average, I’m here to be awesome.",
-  "Your attitude determines your altitude.",
-  "Stay positive, work hard, and make it happen.",
-  "Don’t be afraid to be different, be afraid to be the same as everyone else."
+  "I don’t have an attitude problem, I just have a personality you can’t handle.",
+  "I’m not rude, I just speak what everyone else is thinking.",
 ];
 
-function generateQuote() {
-  const randomIndex = Math.floor(Math.random() * quotes.length);
-  const quoteText = quotes[randomIndex];
-  document.getElementById('quote-text').textContent = quoteText;
-}
-
-function shareOnWhatsApp() {
-  const quote = encodeURIComponent(document.getElementById('quote-text').textContent);
-  const url = `https://wa.me/?text=${quote}`;
-  window.open(url, '_blank');
-}
-
-function shareOnFacebook() {
-  const quote = encodeURIComponent(document.getElementById('quote-text').textContent);
-  const url = `https://www.facebook.com/sharer/sharer.php?u=&quote=${quote}`;
-  window.open(url, '_blank');
-}
+const quoteList = document.getElementById("quoteList");
+quotes.forEach(q => {
+  const li = document.createElement("li");
+  li.textContent = q;
+  quoteList.appendChild(li);
+});
